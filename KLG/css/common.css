@@ -1,0 +1,463 @@
+﻿@charset "utf-8";
+*{
+	margin:0px;
+	padding: 0px;
+}
+html{
+	/*width:100%;
+	height: 100%;*/
+    font-size:62.5%; 
+    font-family: '微软雅黑';
+}
+body{
+	/*width:100%;
+	height:100%;*/
+    font-size:12px;
+    /*font-size:1.2rem ;*/
+    background:#ccc; 
+    overflow: hidden;
+}
+p{
+    font-size:14px;
+    font-size:1.4rem;
+    padding: 0;
+    margin: 0;
+}
+ul li {
+	list-style: none;
+}
+img,input,textarea{
+	border:0;
+	-webkit-appearance:none;
+	outline: none;
+	background: transparent;
+}
+.clear{clear:both;}
+a,i{
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	text-decoration: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+    margin: 0; 
+}
+input{
+	border-radius: 0;
+}
+p{
+	font-size:12px;
+	transition: font-size .3s ease;
+	-webkit-transition: font-size .3s ease;
+	text-indent: 2em;
+}
+
+.clearfix:after, .clearfix:before {
+	display: table;
+    content: " ";
+}
+.clearfix:after{
+    clear:both;
+}
+.overflowH{
+	overflow: hidden;
+}
+#container{
+	width:640px;
+	height: 1008px;
+	margin:0 auto;
+	transform-origin:50% 0px;
+	-webkit-transform-origin:50% 0px;
+	overflow:hidden;
+	 position: relative;
+}
+.container{
+	width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+/*********************弹层*****************************/
+@-webkit-keyframes DivZoom{
+	0% { -webkit-transform: scale(0.01) }
+	100% { -webkit-transform: scale(1.00) }
+}
+@-moz-keyframes DivZoom{
+	0% { -webkit-transform: scale(0.01) }
+	100% { -webkit-transform: scale(1.00) }
+}
+@-o-keyframes DivZoom{
+	0% { -webkit-transform: scale(0.01) }
+	100% { -webkit-transform: scale(1.00) }
+}
+@keyframes DivZoom{
+	0% { -webkit-transform: scale(0.01) }
+	100% { -webkit-transform: scale(1.00) }
+}
+
+.popalert{
+	width:100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 100;
+	display:none;
+}
+.popup{
+	margin:0 auto;
+	position: absolute;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	-webkit-animation:DivZoom 0.4s ease-in-out;
+	animation:DivZoom 0.4s ease-in-out;
+	-moz-animation:DivZoom 0.4s ease-in-out;
+	-ms-animation:DivZoom 0.4s ease-in-out;
+	-o-animation:DivZoom 0.4s ease-in-out;
+}
+
+/*登录弹窗**/
+.loginbg{
+	width:70%;
+	height:40%;
+	background:rgb(252,251,209);
+	border:rgb(255,183,45) 5px solid;
+	border-radius:20px;
+	max-width:320px;
+	max-height:320px;
+	min-height:240px;
+}
+
+.popup_warp{
+	padding-top: 5%;
+	width:90%;
+	margin:0 auto;
+}
+.login_slogan{
+	text-indent: 10px;
+	font-size:15px;
+	line-height:20px;
+	color:rgb(255,183,45);
+}
+.alertformitem{
+	margin-top:15px;
+	width:100%;
+}	
+.alertformitem label{
+	width:28%;
+	display:block;
+	float:left;
+	line-height:25px;
+	font-size:14px;
+}
+.alertformitem input{
+	border-radius:20px;
+	border:rgb(255,183,45) 1px solid;
+	width:70%;
+	height:25px;
+	text-indent:10px;
+}
+#addressAlert .alertformitem label{
+	line-height:35px;
+}
+.alertformitem select{
+	border-radius:20px;
+	border:rgb(255,183,45) 1px solid;
+	width:70%;
+	height:35px;
+	text-indent:10px;
+}
+.form-control{
+	margin-top:15px;
+}
+.alert_btn_box{
+	text-align:center;
+}
+.alert_btn{
+	display:block;
+	background:url(../images/alertsure.png) no-repeat;
+	background-size: 100% 100%;
+	width:50%;
+	height:60px;
+	margin:10% auto;
+}
+
+a.to_validate{
+	float:left;
+	color:rgb(255,183,45);
+	text-decoration:underline;
+}
+a.forgetpwd{
+	float:right;
+	color:rgb(255,183,45);
+	text-decoration:underline;
+}
+
+/**注册弹窗**/
+.registerbg{
+	width:70%;
+	max-width:320px;
+	height:42%;
+	max-height:340px;
+	min-height: 280px;
+	background:rgb(252,251,209);
+	border:rgb(255,183,45) 5px solid;
+	border-radius:20px;
+}
+#verificationCode{
+	width:25%;
+}
+.registrationCodeCheck{
+	padding:5px 3px;
+	background:rgb(255,183,45);
+	border-radius:5px;
+	color:#fff;
+}
+.registerbg .alert_btn{
+	margin:8% auto;
+}
+
+/**重置弹窗**/
+.resetbg{
+	background:url(../images/resetbg.png) no-repeat;
+	width:80%;
+	max-width:320px;
+	height:42%;
+	max-height:320px;
+	min-height: 280px;
+	background-size:100% 100%;
+}
+#reset .popup_warp{
+	padding-top:15%;
+}
+.reset_to_validate{
+	text-align:center;
+	
+}
+.reset_to_validate a{
+	color:rgb(255,183,45);
+	text-decoration:underline;
+}
+#reset .alert_btn{
+	margin:8% auto;
+}
+
+
+/**错误弹窗**/
+.error_onebtn{
+	width:70%;
+	height:17%;
+	background:rgb(252,251,209);
+	border:rgb(255,183,45) 5px solid;
+	border-radius:20px;
+}
+.error_alert_solgan{
+	text-align:center;
+	font-size:15px;
+	color:#ffa92d;
+	line-height:35px;
+}
+.error_btn_one a{
+	display:block;
+	margin:20px auto;
+	background: url(../images/alertsure.png) no-repeat;
+	background-size:100% 100%;
+	width:40%;
+	height:50px;
+} 
+
+/****活动规则*****/
+.activeRules_bg{
+	background: url(../images/activeRule.png) no-repeat;
+	background-size: 100% 100%;
+	width:90%;
+	height:90%;
+}
+.activeRules_centent{
+	width:88%;
+	margin-left:5%;
+	margin-top:20%;
+	border:1px rgb(255,183,45) solid;
+	background:rgb(255,240,195);
+	height:75%;
+}
+.activeRules_centent_main{
+	width:106%;
+	height:99%;
+	padding-top:20px;
+	position: relative;
+}
+a.iknow_btn{
+	width:130px;
+	height:60px;
+	margin:15px auto;
+	background: url(../images/iknow_btn.png) no-repeat;
+	background-size:100% 100%;
+	display:block;
+}
+.activeRules_centent_main p{
+	padding: 0 7% 3% 2%;
+	font-size:14px;
+}
+/**分享*/
+.share_alert{
+	background:url(../images/share_alert.png) no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	height:100%;
+	display:none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 999;
+}
+
+
+
+
+
+
+/*滚动条*/
+.myScrollbarV {
+	position:absolute;
+	z-index:100;
+	width:3%;
+	bottom:7px;
+	top:5px;
+	right:0%;
+	background:rgb(253,156,53);
+	border-radius:3px;
+}
+.myScrollbarV > div {
+	position:absolute;
+	z-index:100;
+	width:70%;
+	margin-top:5px;
+	padding-top:11px;
+	margin-left:15%;
+	margin-right:15%;
+
+	/* The following is probably what you want to customize */
+
+	background:rgb(255,222,76);
+	background-size: 100%;
+	-webkit-background-clip:padding-box;
+	-moz-background-clip:padding-box;
+	-o-background-clip:padding-box;
+	background-clip:padding-box;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	box-sizing:border-box;
+	
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	-o-border-radius:10px;
+	border-radius:10px;
+}
+
+
+/*响应式*/
+@media (max-width:414px){
+	#addressAlert .alertformitem label{
+		line-height:25px;
+	}
+	.alertformitem select{
+		border-radius:20px;
+		border:rgb(255,183,45) 1px solid;
+		height:25px;
+		text-indent:10px;
+	}
+}
+
+
+@media (max-width:375px){
+	.alertformitem label{
+		width:22%;
+		font-size:12px;
+	}
+	.alertformitem input{
+		width:73%;
+	}
+	.alert_btn{
+		width:60%;
+		height:60px;
+	}
+	.registerbg{
+		height:45%;
+	}
+	.alert_btn,#reset .alert_btn,.registerbg .alert_btn{
+		margin:4% auto;
+	}
+	.error_alert_solgan{
+		font-size:14px;
+		color:#ffa92d;
+		line-height:30px;
+	}
+	.error_btn_one a{
+		display:block;
+		margin:15px auto;
+		height:40px;
+	} 
+	.activeRules_centent_main p{
+		font-size:12px;
+	}
+
+}
+@media (max-width:320px){
+	
+	.alert_btn{
+		width:60%;
+		height:50px;
+	}
+	.alertformitem label{
+		width:30%;
+		font-size:12px;
+	}
+	.alertformitem input{
+		width:68%;
+	}
+	.alertformitem{
+		margin-top:8px;
+	}
+	.form-control{
+		margin-top:8px;
+	}
+	#verificationCode{
+		font-size:10px;
+	}
+	.popup_warp{
+		padding-top:5%;
+	}
+	.registerbg{
+		height:48%;
+	}
+	#reset .popup_warp{
+		padding-top:22%;
+	}
+}
+@media(min-width:768px){
+	.registrationCodeCheck{
+		padding:5px 10px;
+		background:rgb(255,183,45);
+		border-radius:5px;
+		font-size:14px;
+		color:#fff;
+	}
+	.loginbg{
+		width:400px;
+		height:500px;
+		background:rgb(252,251,209);
+		border:rgb(255,183,45) 5px solid;
+		border-radius:20px;
+	}
+}

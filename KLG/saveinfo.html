@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>快乐购-保存地址</title>
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<!--<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>  -->
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/base.js"></script>
+	<!--<script type="text/javascript" src="js/main.js"></script>--> 
+</head>
+<body>
+	<div id="container">
+		<div class="container saveinfo_container">
+			<div class="back">
+				<img src="images/back.png">
+				<a href="javascript:;"></a>
+			</div>
+			<div class="infoback">
+				<div class="addressinfoformdiv">
+					<form id="addressForm">
+						<div class="addformitem clearfix">
+							<span>名称:</span>
+							<input name="name">
+						</div>
+						<div class="addformitem clearfix">
+							<span>收货人姓名:</span>
+							<input id="customerName" name="receiverName">
+						</div>
+						<div class="addformitem clearfix">
+							<span>手机电话:</span>
+							<input id="customerPhone" name="receiverMobileNumber">
+						</div>
+						<div class="addformitem clearfix">
+							<span>省份:</span>
+							<select id="selProvince" name="province" class="province address-new">
+									<option value="0">--请选择省份--</option>
+								</select>
+						</div>
+						<div class="addformitem clearfix">
+							<span>城市:</span>
+							<select id="selCity" name="city" class="city address-new">
+								<option value="0">--请选择城市--</option>
+							</select>
+						</div>
+						<div class="addformitem clearfix">
+							<span>区县:</span>
+							<select id="selDistrict" name="district" class="district address-new">
+								<option value="0">--请选择区/县--</option>
+							</select>
+						</div>
+						<div class="addformitem clearfix">
+							<span>详细地址:</span>
+							<input id="customerDetailedAddress" name="street">
+						</div>
+						
+					</form>
+					<span class="zhu">
+							注：请确认填写收货地址，以便收到物品。
+						</span>
+				</div>
+				
+			</div>
+			<div class="info_submit">
+				<a href="javascript:addSaveAddress();" class="info_submit_btn"></a>
+			</div>
+		</div>
+		<!--
+        	作者：1328512497@qq.com
+        	时间：2016-07-11
+        	描述：地址弹窗
+        -->
+		<div class="popalert" id="addressAlert">
+			<div class="popup address_alert_bg">
+				<div class="popup_warp">
+					<form class="">
+						<div class="alertformitem">
+								<label class="public">省份：</label> 
+								<select id="selProvince" name="province" class="province address-new">
+									<option value="0">--请选择省份--</option>
+								</select>
+							</div>
+							<div class="alertformitem">
+								<label class="public">城市：</label> 
+								<select id="selCity" name="city" class="city address-new">
+									<option value="0">--请选择城市--</option>
+								</select>
+							</div>
+							<div class="alertformitem">
+								<label class="public">区县：</label> 
+								<select id="selDistrict" name="district" class="district address-new">
+									<option value="0">--请选择区/县--</option>
+								</select>
+							</div>
+							<a href="javascript:addSaveAddress()" class="pcd_submit_btn"></a>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<!--
+        	作者：1328512497@qq.com
+        	时间：2016-07-12
+        	描述：活动规则
+        -->
+		
+		
+		
+	</div>
+</body>
+<script type="text/javascript" src="js/rem.js"></script>
+<script type="text/javascript" src="js/china_area.js"></script>
+<script type="text/javascript" src="js/saveinfo.js"></script>
+
+
+</html>

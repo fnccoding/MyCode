@@ -1,0 +1,916 @@
+/****首页*****/
+.hide{
+	display:none;
+}
+.index_container{
+	background: url(../images/indexBackground.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.active_rule a{
+	width:21%;
+	height: 4.7%;
+	position: absolute;
+	top:2.3%;
+	right:0;
+	z-index:32;
+	display:block;
+}
+.active_rule img{
+	width:21%;
+	position: absolute;
+	top:2.3%;
+	right:0;
+	z-index:30;
+}
+.personal_center a{
+	width:21%;
+	height: 4.7%;
+	position: absolute;
+	top:7.5%;
+	right:0;
+	z-index:32;
+	display:block;
+}
+.personal_center img{
+	width:21%;
+	position: absolute;
+	top:7.5%;
+	right:0;
+	z-index:30;
+}
+.club_logo img{
+	width:10%;
+	position: absolute;
+	top:1.6%;
+	left:2.5%;
+}
+.guang img{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	position: absolute;
+}
+
+.slogan img{
+	width:83%;
+	top:7%;
+	left:0;
+	right:0;
+	position:absolute;
+	margin:auto;
+}
+.haitaileft img{
+	width:28%;
+	left:3%;
+	top:55%;
+	position:absolute;
+	
+}
+.haitairight img{
+	width:25%;
+	right:8%;
+	top:34%;
+	position:absolute;
+	
+}
+.wangzaibag img{
+	width:22%;
+	top:47%;
+	right:10%;
+	position: absolute;
+}
+.wangzai img{
+	width:55%;
+	top:36%;
+	left:23%;
+	position:absolute;
+	animation: zoomIn 8s infinite linear;
+}
+@-webkit-keyframes zoomIn {
+  0% {
+    -webkit-transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+     -webkit-transform: scale3d(1, 1, 1);
+  }
+  70% {
+     -webkit-transform: scale3d(.99, .99, .99);
+  }
+  75% {
+     -webkit-transform: scale3d(.95, .95, .95);
+  }
+  100% {
+   -webkit-transform: scale3d(.9, .9, .9);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+  
+}
+.joinActivity img{
+	width:58%;
+	top:67%;
+	left:22%;
+	position: absolute;
+}
+.joinActivity a{
+	width:58%;
+	top:67%;
+	height:30%;
+	left:22%;
+	position: absolute;
+	z-index:31;
+}
+.gifttop img{
+	width:11%;
+	top:42%;
+	left:16.5%;
+	position:absolute;
+}
+.giftleft img{
+	width:16%;
+	top:78%;
+	left:6%;
+	position:absolute;
+}
+.giftright img{
+	width:12%;
+	top:70%;
+	right:9%;
+	position:absolute;
+}
+.flypig{
+	width:11%;
+	top:27%;
+	left:51%;
+	position:absolute;
+}
+@-webkit-keyframes lightInTitle{
+    0%{opacity: 0.6;}
+    50%{opacity:1;-webkit-transform:scale(1.5);}
+    100%{opacity: 0.6;}        
+}
+@-moz-keyframes lightInTitle{
+    0%{opacity: 0.6;}
+    50%{opacity:1;-moz-transform:scale(1.5);}
+    100%{opacity: 0.6;}        
+}
+@keyframes lightInTitle{
+    0%{opacity: 0.6;}
+    50%{opacity:1;transform:scale(1.5);}
+    100%{opacity: 0.6;}        
+}
+.sloganstartop img{
+	width:20%;
+	top:4%;
+	left:19%;
+	position:absolute;
+	animation: lightInTitle 4s ease-in-out infinite;
+}
+.sloganstarright img{
+	width:13%;
+	top:22%;
+	left:54%;
+	position:absolute;
+	z-index:2;
+	animation: lightInTitle 4s ease-in-out infinite;
+}
+.stars img{
+	z-index:31;
+	/* animation: bb .5s linear ; */
+}
+.opacity{
+	opacity:0;
+}
+@keyframes bb{
+    0%{opacity:0;}
+    100%{opacity:1;}       
+}
+
+
+/**选择地址**/
+.saveinfo_container{
+	background:url("../images/publicbackground.jpg") no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	height:100%;
+}
+.back img{
+	width:18%;
+	top:2.5%;
+	left:0;
+	position:absolute;
+}
+.back a{
+	display:block;
+	width:18%;
+	height:4.5%;
+	top:2.5%;
+	left:0;
+	position:absolute;
+}
+.infoback{
+	background:url("../images/infobackground.png") no-repeat;
+	background-size:100% 100%;
+	width:90%;
+	height:72%;
+	margin:10% auto 0 auto;
+	position: relative;
+}
+.addressinfoformdiv{
+	width:95%;
+	margin:0 auto;
+	padding-top:5%;
+	padding-bottom:20%;
+}
+.addformitem{
+	background: url("../images/infoinput.png");
+	background-size:100% 100%;
+	width:100%;
+	height:40px;
+	margin-top:3%;
+}
+.addformitem span{
+	display:block;
+	width:30%;
+	float:left;
+	line-height:40px;
+	font-size:16px;
+	padding-left:8%;
+	color:rgb(247,241,144);
+	text-align: right;
+	margin-right:5%;
+}
+.addformitem input{
+	line-height:40px;
+	font-size:14px;
+	width:45%;
+	color:rgb(255,255,255);
+}
+.addformitem select{
+	border-radius:20px;
+	border:rgb(255,183,45) 1px solid;
+	width:45%;
+	height:30px;
+	line-height:30px;
+	text-indent:10px;
+	margin-top:5px;
+}
+.address_label{
+	color:#fff;
+	font-size:14px;
+	padding-left:15px;
+}
+.zhu{
+	color:rgb(225,104,34);
+	display:block;
+	float:right;
+	margin-top:10px;
+	height:20px;
+}
+
+a.info_submit_btn{
+	width:30%;
+	height:60px;
+	margin:5% auto;
+	display:block;
+	background: url(../images/addsure.png) no-repeat;
+	background-size:100% 100%;
+}
+.address_alert_bg{
+	width:50%;
+	height:30%;
+	background:rgb(252,251,209);
+	border:rgb(255,183,45) 5px solid;
+	border-radius:20px;
+}
+a.pcd_submit_btn{
+	width:50%;
+	height:60px;
+	margin:8% auto;
+	display:block;
+	background: url(../images/addsure.png) no-repeat;
+	background-size:100% 100%;
+}
+.default_add,.address_item,.add_new_address{
+	font-size:14px;
+	background: rgb(207,111,33);
+	line-height: 25px;
+	width:95%;
+	margin:0 auto;
+	color:rgb(247,241,144);
+	border-radius:10px;
+}
+.address_item,.add_new_address{
+	margin-top:10px;
+}
+.default_add_left{
+	width:85%;
+	margin-left:1%;
+	float:left;
+}
+.default_add_left span{
+	padding-left:5px;
+}
+.default_add_right{
+	position: relative;
+	width:12%;
+	float:left;
+}
+.default_add_right img{
+	position: absolute;
+	top:0;
+	right:10%;
+	margin-top:50% ;
+}
+.select_address_bg{
+	background:url(../images/bg.png) no-repeat;
+	background-size:100% 100%;
+}
+.address{
+	width:90%;
+	margin:0 auto;
+	padding-top:15%;
+}
+.select_add_main{
+	background:url(../images/select_add_bg.png) no-repeat;
+	background-size:100% 100%;
+	width:90%;
+	height:85%;
+	margin:10% auto;
+	position: relative;
+}
+.select_add_main_main{
+	width:100%;
+	height:92%;
+	padding-top:10%;
+	
+}
+.select_add_main_box{
+	height:98%;
+	position: relative;
+}
+.all_address{
+	border:solid #fff 1px;
+	display:none;
+}
+.address_item_left{
+	width:10%;
+	float:left;
+}
+.address_item_left img{
+	width:80%;
+	margin:50% auto;
+	display:block;
+}
+.address_item_left2{
+	width:10%;
+	float:left;
+}
+.address_item_left2 img{
+	width:80%;
+	margin:20% auto;
+	display:block;
+}
+.address_item_center{
+	width:78%;
+	float:left;
+	line-height: 20px;
+}
+.address_item_right,.address_item_right2{
+	width:10%;
+	float:right;
+}
+.address_item_right img{
+	width:80%;
+	margin:50% auto;
+	display:block;
+}
+.address_item_right2 img{
+	width:50%;
+	margin:20% auto;
+	display:block;
+}
+.addressinfoformdiv h1{
+	color:rgb(207,111,33);
+	text-align: center;
+	font-size:16px;
+}
+
+.show_shop_car{
+	width:88%;
+	margin:0 auto;
+}
+.shop_car_item{
+	margin-top:10px;
+	background: rgb(255,249,238);
+	border-radius:10px;
+}
+.product_img{
+	width:35%;
+	margin-left:3%;
+	float:left;
+}
+.product_img img{
+	width:80%;
+}
+.product_right{
+	width:60%;
+	float:left;
+}
+.product_name,.product_details label{
+	line-height: 40px;
+	color:rgb(249,139,49);
+}
+.product_details label{
+	width:33%;
+	text-align: center;
+	display:block;
+	float:left;
+}
+.address_sure_or_clear{
+	text-align: center;
+}
+.order_footer{
+	width:100%;
+	height:60px;
+	position:absolute;
+	background:rgb(251,222,111);
+	left:0;
+	bottom:0;
+	margin:0 auto;
+	max-width:640px;
+}
+.order_price_box{
+	width:auto;
+	float:left;
+	text-align:center;
+	line-height:60px;
+	width:70%;
+}
+.submit_order{
+	float:right;
+	width:29%;
+	height:60px;
+}
+.submit_order a{
+	width:100%;
+	height:60px;
+	background:#ff5252;
+	background-size:100% 100%;
+	display:block;
+	text-align:center;
+	line-height:60px;
+	color:#fff;
+}
+
+
+
+
+/**个人中心**/
+.go_index img{
+	width:21%;
+	position: absolute;
+	top:2.3%;
+	left:0;
+	z-index:30;
+}
+
+.go_index a{
+	width:21%;
+	height: 4.7%;
+	position: absolute;
+	top:2.3%;
+	left:0;
+	z-index:32;
+	display:block;
+}
+.personalCenterBg{
+	background:url(../images/personalCenterbg.png) no-repeat;
+	background-size:100% 100%;
+	height:90%;
+	width:90%;
+	margin:12% auto;
+	position: relative;
+}
+.tab_select{
+	background:url(../images/pc_tab.png) no-repeat;
+	background-size:100% 100%;
+	height:40px;
+	width:75%;
+	margin:4% auto;
+	position: relative;
+}
+.tab_item{
+	color:#fff;
+	font-size:14px;
+	display:block;
+	float:left;
+	width:31%;
+	margin-left:1%;
+	margin-right:1%;
+	text-align: center;
+	line-height: 30px;
+	height:30px;
+	margin-top:5px;
+	font-weight: 600;
+}
+.tab_active{
+	background:url(../images/tab_active.png) no-repeat;
+	border-radius: 5px;
+	color:rgb(255,103,1);
+}
+/*个人订单*/
+.pc_personalOrder,.pc_personalWinrecord,.pc_loveRecord{
+	width:95%;
+	margin:0 auto;
+	height:75%;
+	position: relative;
+}
+.personalOrder_item,.pc_personalWinrecord_item,.pc_loveRecord_item{
+	border:rgb(254,161,140) 2px solid;
+	border-radius:10px;
+	margin-bottom:10px;
+	background:rgb(255,249,238);
+	width:95%;
+}
+.personalOrder_top,.personalOrder_bottom,.loveRecord_top{
+	background:rgb(255,249,238);
+	height:20px;
+	line-height:20px;
+	border-radius:10px;
+	color:rgb(225,104,34);
+	padding-left:10px;
+}
+.personalOrder_center{
+	background:#fff;
+	height:80px;
+	padding-left:10px;
+}
+.personalOrder_bottom p{
+	float:left;
+	text-indent:0;
+}
+.personalOrder_date{
+	width:20%;
+}
+.personalOrder_count{
+	width:38%;
+	text-align: right;
+}
+.personalOrder_price{
+	width:40%;
+	text-align: right;
+}
+.product_count{
+	color:rgb(242,17,17);
+	padding-left:2px;
+	padding-right:2px;
+	font-size:14px;
+}
+.order_price{
+	color:rgb(242,17,17);
+	font-size:14px;
+	padding-left:5px;
+}
+.personalOrder_porduct_img{
+	width:15%;
+	margin-right:10px;
+	float: left;
+	margin-top:8px;
+}
+
+.personalOrder_porduct_img img{
+	width:100%;
+}
+.personalOrder_statu{
+	float:left;
+	margin-left:25%;
+	width:14%;
+	margin-top:8px;
+}
+.personalOrder_statu img,.pc_personalWinrecord_statu img{
+	width:100%;
+}
+.right_arrow{
+	width:20px;
+	float:right;
+	position: relative;
+	right:5px;
+	margin-top:30px;
+}
+.right_arrow img{
+	width:100%;
+}
+
+/**中奖纪录**/
+
+.pc_personalWinrecord_top{
+	background:rgb(255,249,238);
+	height:30px;
+	line-height:30px;
+	border-radius:10px;
+	color:rgb(225,104,34);
+	padding-left:10px;
+}
+.pc_personalWinrecord_bottom{
+	background:#fff;
+	height:80px;
+	padding-left:10px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	color:rgb(225,104,34);
+	font-size:16px;
+}
+.winrecord_img{
+	width:60px;
+	float:left;
+	margin-top:10px;
+}
+.winrecord_img img{
+	width:100%;
+}
+.winrecord_name_box{
+	margin-left:20px;
+	float: left;
+	width:45%;
+}
+.winrecord_name_box span{
+	line-height: 80px;
+	font-size:16px;
+}
+.winrecord_name{
+	color:rgb(247,72,32);
+}
+.pc_personalWinrecord_statu{
+	margin-left:10px;
+	float:left;
+	width:14%;
+	margin-top:15px;
+}
+
+/*爱心足迹*/
+.loveRecord_top{
+	height:30px;
+}
+.loveRecord_bottom{
+	color:rgb(225,104,34);
+	padding-left:10px;
+	background:#fff;
+	height:40px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.loveRecord_bottom span{
+	font-size:14px;
+	line-height: 40px;
+}
+.love_help_name{
+	color:rgb(255,160,13);
+}
+
+/**旺仔第一个帮付**/
+.wangzai_help_bg{
+	background: url(../images/wangzi_help_bg.jpg) no-repeat;
+	background-size:100% 100%;
+}
+.wzbf_iKonw a{
+	width:28%;
+	position: absolute;
+	height:9%;
+	top:80%;
+	left:36%;
+	display:block;
+	z-index: 10;
+}
+.help_congratulations img{
+	width:21%;
+	position: absolute;
+	top:30%;
+	left:39%;
+}
+.help_wangbi{
+	width:100%;
+	text-align: center;
+	position: absolute;
+	top:38%;
+	color:rgb(253,115,48);
+	font-size:16px;
+}
+.help_wangbi span{
+	color:rgb(255,71,52);
+	padding-left:2px;
+	padding-right:2px;
+}
+
+/**向旺仔求助**/
+.ask_wangzai_to_help_bg{
+	background: url(../images/ask_wangzai_to_help_bg.jpg) no-repeat;
+	background-size:100% 100%;
+	
+}
+.clubMember_show{
+	position:absolute;
+	top:35%;
+	width:82%;
+	left:9%;
+}
+.clubMember_show_item{
+	width:100%;
+	height:150px;
+}
+.clubMember_show_box1{
+	width:100px;
+	margin:0 auto;
+}
+.clubMember_show_box2{
+	width:100px;
+	float:left;
+	margin-left:15%;
+}
+.clubMember_handImg_bg{
+	width:100%;
+	background: url(../images/handImg_bg.png) no-repeat;
+	background-size:100% 100%;
+}
+.clubMember_handImg_bg img{
+	width:100%;
+}
+.clubMember_name{
+	color:rgb(251,219,104);
+	font-size:16px;
+	text-align: center;
+}
+.sure_ask_wangzai_to_help_btn a{
+	width:30%;
+	height:8%;
+	position: absolute;
+	left:36%;
+	top:84%;
+	z-index: 2;
+}
+
+
+
+
+
+
+
+
+/*响应式*/
+@media(min-width:768px){
+	.addformitem{
+		height:55px;
+		margin-top:5%;
+	}
+	a.info_submit_btn{
+		height:90px;
+	}
+	.addformitem input,.addformitem span{
+		line-height:55px;
+		font-size:18px;
+	}
+}
+@media(max-width:414px){
+	a.pcd_submit_btn{
+		height:45px;
+	}
+	.personalOrder_center{
+		height:60px;
+	}
+	.personalOrder_statu{
+		margin-left:20%;
+	}
+	.right_arrow{
+		margin-top:20px;
+	}
+	.pc_personalWinrecord_item{
+		height:114px;
+	}
+}
+@media(max-width:375px){
+	.address_label{
+		padding-left:10px;
+	}
+	.addformitem input{
+		line-height: 40px;
+	}
+	.addformitem span{
+		font-size:14px;
+	}
+	.addformitem select{
+		height:25px;
+	}
+	a.info_submit_btn {
+	    width: 30%;
+	    height: 50px;
+	    margin: 5% auto;
+	    display: block;
+	    background: url(../images/addsure.png) no-repeat;
+	    background-size: 100% 100%;
+	}
+	.tab_select{
+		width:80%;
+	}
+	.personalOrder_count{
+		width:32%;
+	}
+	.personalOrder_price{
+		width:45%;
+		text-align: right;
+	}
+	.personalOrder_statu{
+		margin-left:15%;
+	}
+	.winrecord_name_box span{
+		font-size:14px;
+	}
+	.clubMember_show_box2{
+		margin-left:12%;
+	}
+	.clubMember_show_box1{
+		width:80px;
+	}
+	.clubMember_show_box2{
+		width:80px;
+		margin-left:17%;
+	}
+	.clubMember_show_item{
+		height:120px;
+	}
+}
+@media(max-width:320px){
+	.addformitem{
+		height:30px;
+	}
+	.addformitem input{
+		line-height: 40px;
+		height:30px;
+		font-size:12px;
+	}
+	.addformitem span{
+		font-size:12px;
+		line-height: 30px;
+	}
+	.addformitem select{
+		height:20px;
+	}
+	.personalOrder_center{
+		height:50px;
+	}
+	.personalOrder_count{
+		width:42%;
+	}
+	.personalOrder_price{
+		width:35%;
+		text-align: right;
+	}
+	.winrecord_name_box{
+		margin-left:10px;
+		width:42%;
+	}
+	.winrecord_name_box span{
+		font-size:12px;
+		line-height:65px;
+	}
+	.pc_personalWinrecord_bottom{
+		height:65px;
+	}
+	.winrecord_img{
+		width:50px;
+		margin-top:7px;
+	}
+	.clubMember_show_box1{
+		width:60px;
+	}
+	.clubMember_show_box2{
+		width:60px;
+		margin-left:19%;
+	}
+	.clubMember_show_item{
+		height:100px;
+	}
+}
+@media(min-width:768px){
+	.personalOrder_porduct_img{
+		margin-top:0;
+	}
+	.clubMember_show_box1{
+		width:120px;
+	}
+	.clubMember_show_box2{
+		width:120px;
+		margin-left:19%;
+	}
+	.clubMember_show_item{
+		height:180px;
+	}
+}

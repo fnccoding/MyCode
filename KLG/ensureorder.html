@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="email=no" name="format-detection">
+	<title>订单确认</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style2.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/base.js"></script>
+	
+</head>
+<body>
+	<div class="order-wrapper" id="container">
+		<div class="order-bg">
+			<div class="go_index">
+					<img src="images/back.png">
+					<a href="javascript:history.go(-1);"></a>
+				</div>
+				<div class="active_rule">
+					<a href="javascript:showActiveRule();" id="rule_btn"></a>
+					<img src="images/activityrule.png">
+				</div>
+				<div class="haveProduct">
+					<div class="order-body">
+						<ul class="order-ul">
+							
+						</ul>
+					</div>
+					<div class="tolal">
+						<div class="zong">总金额：</div>
+						<div class="money">0</div>
+					</div>
+					<div class="step"></div>
+					<div class="Btn">
+						<a href="javascript:settlement();" class="ensure-btn" id="Btn"></a>
+					</div>
+				</div>
+			
+			<div class="order-tip">注：7个工作日内未筹集完金额，订单将失效，所付旺币将退还到付款人账户</div>
+		</div>
+	</div>
+	
+</body>
+<script src="js/rem.js"></script>
+<script src="js/member.js"></script>
+<script src="js/ensureorder.js" type="text/javascript"></script>
+	
+<script src="js/iscroll.js" type="text/javascript"></script>
+<script src="js/activeRule.js" type="text/javascript"></script>
+</html>

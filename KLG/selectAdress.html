@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>选择地址</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/style2.css" />
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/base.js"></script>
+ 		<script type="text/javascript" src="js/sha1.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<div class="container select_address_bg">
+				<div class="back">
+					<img src="images/back.png">
+					<a href="javascript:history.back(-1)"></a>
+				</div>
+				<!--
+                	作者：1328512497@qq.com
+                	时间：2016-07-18
+                	描述：地址这一块
+                -->
+                <div class="select_add_main" >
+                	<div class="select_add_main_main"  >
+                		<div class="select_add_main_box" style="overflow-y: scroll">
+                			<div class="address_product">
+                				<div class="address">
+									<div class="default_add clearfix" id="default_add" style="display:none">
+										<div class="default_add_left">
+											<div class="add_name_phone">
+												<span id="receiverName"></span>
+												<span id="receiverMobileNumber"></span>
+											</div>
+											<div class="details_add">
+												<span id="addressDetails"></span>
+											</div>
+										</div>
+										<div class="default_add_right clearfix">
+											<img src="images/dztx_back.png">
+										</div>
+									</div>
+									<div class="all_address">
+										
+									</div>
+									<div class="add_new_address clearfix" id="add_new_address">
+											<div class="address_item_left2">
+												<img src="images/add_icon_03.png">
+											</div>
+											<div class="address_item_center" style="line-height: 40px;">
+												新增地址
+											</div>
+											<div class="address_item_right2">
+												<img src="images/dztx_back.png">
+											</div>
+										</div>
+									<div class="address_edit" id="address_edit">
+										<div class="addressinfoformdiv">
+											<h1>地址填写</h1>
+											<form id="addressForm">
+												<div class="addformitem clearfix">
+													<span>名称:</span>
+													<input type="text" name="code" style="display: none;" />
+													<input name="name" id="name" autocomplete="off">
+												</div>
+												<div class="addformitem clearfix">
+													<span>收货人姓名:</span>
+													<input id="customerName" name="receiverName" autocomplete="off">
+												</div>
+												<div class="addformitem clearfix">
+													<span>手机电话:</span>
+													<input id="customerPhone" name="receiverMobileNumber" autocomplete="off">
+												</div>
+												<div class="addformitem clearfix">
+													<span>省份:</span>
+													<select id="selProvince" name="province" class="province address-new" >
+															<option value="0">--请选择省份--</option>
+														</select>
+												</div>
+												<div class="addformitem clearfix">
+													<span>城市:</span>
+													<select id="selCity" name="city" class="city address-new">
+														<option value="0">--请选择城市--</option>
+													</select>
+												</div>
+												<div class="addformitem clearfix">
+													<span>区县:</span>
+													<select id="selDistrict" name="district" class="district address-new">
+														<option value="0">--请选择区/县--</option>
+													</select>
+												</div>
+												<div class="addformitem clearfix">
+													<span>详细地址:</span>
+													<input id="customerDetailedAddress" name="street" autocomplete="off">
+												</div>
+												
+											</form>
+											<span class="zhu">
+													注：请确认填写收货地址，以便收到物品。
+												</span>
+										</div>
+										<div class="address_save">
+											<a href="javascript:addSaveAddress();">保存</a>
+										</div>
+										<div class="address_changfe_or_clear" style="display:none">
+											<a href="javascript:removeAddress();">删除</a>
+											<a href="javascript:updateSaveAddress();">确认</a>
+										</div>
+										
+									</div>
+									
+								</div>
+                			<div class="show_shop_car">
+								
+							</div>
+                			
+                			</div>
+                			
+                		</div>
+                		
+                	</div>
+                	
+                </div>
+				<div class="order_footer">
+					<div class="order_price_box">
+						<p>订单总额：￥<span>100</span></p>
+					</div>
+					<div class="submit_order">
+						<a href="wangzai_help.html">提交订单</a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</body>
+	<script src="js/rem.js" type="text/javascript"></script>
+	<script src="js/member.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript" src="js/china_area.js"></script>
+	<script type="text/javascript" src="js/selectAddress.js"></script>
+	
+</html>
